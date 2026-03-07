@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PublicController extends Controller
 {
-    public function ContactUs () {
-        return view('contact-us');
+    public function Contatti () {
+        return view('contatti');
     }
 }

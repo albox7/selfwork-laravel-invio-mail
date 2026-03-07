@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contact-us', [PublicController::class, 'ContactUs'])->name('contact_us');
+Route::get('/contatti', [PublicController::class, 'Contatti'])->name('contatti');
