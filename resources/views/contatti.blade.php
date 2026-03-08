@@ -11,7 +11,14 @@
 		</div>
 		<div class="row">
 			<div class="col-12 col-md-8 col-lg-6">
-				<form method="POST" action="">
+
+				@if (session('message'))
+					<div class="alert alert-success">
+						{{ session('message') }}
+					</div>
+				@endif				
+
+				<form method="POST" action="{{route('send_email')}}">
 					
 					@csrf
 					

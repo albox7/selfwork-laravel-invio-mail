@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/contatti', [PublicController::class, 'Contatti'])->name('contatti');
+
+Route::post('contatti/send', [PublicController::class, 'send_email'])->name('send_email');
