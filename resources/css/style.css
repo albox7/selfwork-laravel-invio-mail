@@ -24,6 +24,16 @@ h1::before {
 	content: '__';
 }
 
+a {
+	color: chocolate;
+	text-decoration: none;
+	transition: all .2s ease-out;
+}
+
+a:hover {
+	color: darkolivegreen;
+}
+
 .input-group-text {
 	background-color: white;
 	border: 1px solid #A09DB3;
@@ -97,4 +107,36 @@ textarea {
 
 .input-group:focus-within .input-group-text {
 	background-color: #EEE;
+}
+
+.hero-text {
+	font-size: 8rem;
+	font-weight: 900;
+	margin-bottom: 2rem;
+}
+
+.maintenance-bg {
+	position: fixed;
+	top: -100px;
+	right: -100px;
+	width: 40vw;
+	height: 40vw;
+	background-image: url('/public/media/maintenance-icon.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	mix-blend-mode: color-burn;
+	opacity: .2;
+	z-index: -1;
+	pointer-events: none;
+	animation: rotateBg 40s linear infinite;
+}
+
+@keyframes rotateBg {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+.fw-9 {
+	font-weight: 900;
 }

@@ -1,5 +1,5 @@
 
-<x-layout>
+<x-layout title="Gorillas / Contattaci">
 
 	<div class="container">
 		<div class="row">
